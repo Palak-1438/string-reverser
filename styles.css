@@ -1,0 +1,117 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+.tape-container {
+    position: relative;
+    height: 80px;
+    margin: 30px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    border: 1px solid #ddd;
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.tape {
+    display: inline-block;
+    font-family: monospace;
+    font-size: 24px;
+    letter-spacing: 10px;
+}
+
+.cell {
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    text-align: center;
+    border-bottom: 2px solid #3498db;
+    position: relative;
+}
+
+.head {
+    position: absolute;
+    bottom: 50px;
+    font-size: 30px;
+    transition: left 0.5s ease;
+}
+
+.state-display {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.instructions {
+    background-color: #f0f7fb;
+    padding: 15px;
+    border-left: 4px solid #3498db;
+    border-radius: 4px;
+}
+
+.highlight {
+    background-color: #fffacd;
+    font-weight: bold;
+}
+
+.current-cell {
+    background-color: #ffeb3b;
+    border-radius: 50%;
+}

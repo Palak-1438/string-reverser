@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turing Machine String Reverser</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Turing Machine String Reverser</h1>
+        
+        <div class="input-section">
+            <input type="text" id="inputString" placeholder="Enter a string to reverse">
+            <button id="runButton">Run Simulation</button>
+            <button id="stepButton">Step Through</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        
+        <div class="controls">
+            <label for="speedControl">Animation Speed:</label>
+            <input type="range" id="speedControl" min="1" max="10" value="5">
+        </div>
+        
+        <div class="tape-container">
+            <div class="tape" id="tape"></div>
+            <div class="head" id="head">⤶</div>
+        </div>
+        
+        <div class="state-display">
+            <h3>Current State: <span id="currentState">q₀</span></h3>
+            <h3>Output: <span id="output"></span></h3>
+        </div>
+        
+        <div class="instructions">
+            <h3>How It Works:</h3>
+            <ol>
+                <li>The Turing machine marks the start (#) and end ($) of the input</li>
+                <li>It copies each symbol to the end in reverse order</li>
+                <li>Finally, it removes the markers to leave just the reversed string</li>
+            </ol>
+        </div>
+    </div>
+    
+    <script src="turing-machine.js"></script>
+</body>
+</html>
